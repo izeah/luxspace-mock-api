@@ -11,3 +11,5 @@ let server = new PostmanLocalMockServer(2323, collection);
 
 //Start the server
 server.start();
+
+module.exports = server;
