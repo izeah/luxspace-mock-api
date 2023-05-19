@@ -12,12 +12,6 @@
       "destination": "index.js"
     }
   ],
-  "builds": [
-    {
-      "src": "index.js",
-      "use": "@now/node"
-    }
-  ],
   "routes": [
     {
       "src": "/(.*)",
