@@ -1,0 +1,20 @@
+{
+  "name": "luxspace-mock-api",
+  "version": "1.0.0",
+  "description": "For fake project Luxspace-React-For-Designer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js",
+    "build": "npm install && nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@jordanwalsh23/postman-local-mock-server": "^0.0.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}

@@ -1,0 +1,598 @@
+{
+	"info": {
+		"_postman_id": "b741b677-f709-4700-84d2-d802fe3fe3b6",
+		"name": "Luxspace-Mock",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19893349"
+	},
+	"item": [
+		{
+			"name": "Meta Checkout",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/v1/checkout/meta",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"checkout",
+						"meta"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Meta Checkout",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/checkout/meta",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"checkout",
+								"meta"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"meta\": {\n        \"success\": true,\n        \"message\": \"Request successfully proceed\"\n    },\n    \"data\": {\n        \"couriers\": [\n            {\n                \"id\": 1,\n                \"name\": \"Fedex\",\n                \"imgUrl\": \"https://luxspace-html.netlify.app/images/content/logo-fedex.svg\"\n            },\n            {\n                \"id\": 2,\n                \"name\": \"DHL Express\",\n                \"imgUrl\": \"https://luxspace-html.netlify.app/images/content/logo-dhl.svg\"\n            }\n        ],\n        \"payments\": [\n            {\n                \"id\": 1,\n                \"name\": \"Midtrans\",\n                \"imgUrl\": \"https://luxspace-html.netlify.app/images/content/logo-midtrans.png\"\n            },\n            {\n                \"id\": 2,\n                \"name\": \"Mastercard\",\n                \"imgUrl\": \"https://luxspace-html.netlify.app/images/content/logo-mastercard.svg\"\n            },\n            {\n                \"id\": 3,\n                \"name\": \"Bitcoin\",\n                \"imgUrl\": \"https://luxspace-html.netlify.app/images/content/logo-bitcoin.svg\"\n            },\n            {\n                \"id\": 4,\n                \"name\": \"American Express\",\n                \"imgUrl\": \"https://luxspace-html.netlify.app/images/content/logo-american-express.svg\"\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/v1/products?page=1&page_size=10",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"products"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Products",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/products?page=1&page_size=10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "page_size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"meta\": {\n        \"success\": true,\n        \"message\": \"Request successfully proceed\",\n        \"info\": {\n            \"page\": 1,\n            \"page_size\": 10\n        }\n    },\n    \"data\": [\n        {\n            \"id\": 1,\n            \"category_id\": 3,\n            \"name\": \"Cangkir Mauttie\",\n            \"price\": 89300,\n            \"image_url\": \"https://luxspace-html.netlify.app/images/content/image-arrived-1.png\"\n        },\n        {\n            \"id\": 2,\n            \"category_id\": 3,\n            \"name\": \"Bangku Minimay\",\n            \"price\": 67899,\n            \"image_url\": \"https://luxspace-html.netlify.app/images/content/image-arrived-2.png\"\n        },\n        {\n            \"id\": 3,\n            \"category_id\": 3,\n            \"name\": \"Buku Sidu Edition\",\n            \"price\": 120699,\n            \"image_url\": \"https://luxspace-html.netlify.app/images/content/image-arrived-3.png\"\n        },\n        {\n            \"id\": 4,\n            \"category_id\": 3,\n            \"name\": \"Watch Notes X\",\n            \"price\": 1973000,\n            \"image_url\": \"https://luxspace-html.netlify.app/images/content/image-arrived-4.png\"\n        },\n        {\n            \"id\": 5,\n            \"category_id\": 3,\n            \"name\": \"Sweet Modern Dinning Table\",\n            \"price\": 599400,\n            \"image_url\": \"https://images.unsplash.com/photo-1554295405-abb8fd54f153?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=562&q=80\"\n        },\n        {\n            \"id\": 6,\n            \"category_id\": 3,\n            \"name\": \"Meja Belajar IKEA\",\n            \"price\": 678990,\n            \"image_url\": \"https://images.unsplash.com/photo-1600356769878-647c38d256e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80\"\n        },\n        {\n            \"id\": 7,\n            \"category_id\": 1,\n            \"name\": \"Gray White Padded Sofa\",\n            \"price\": 89999999,\n            \"image_url\": \"https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=701&q=80\"\n        },\n        {\n            \"id\": 8,\n            \"category_id\": 1,\n            \"name\": \"Teal Wooden Cabinet\",\n            \"price\": 1298599,\n            \"image_url\": \"https://images.unsplash.com/photo-1513161455079-7dc1de15ef3e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80\"\n        },\n        {\n            \"id\": 9,\n            \"category_id\": 2,\n            \"name\": \"Classy Wooden Chair\",\n            \"price\": 859000,\n            \"image_url\": \"https://images.unsplash.com/photo-1487015307662-6ce6210680f1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=632&q=80\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Product Detail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/v1/products/:id",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"products",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "9"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Product Detail ID 1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/products/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"meta\": {\n        \"success\": true,\n        \"message\": \"Request successfully proceed\"\n    },\n    \"data\": {\n        \"id\": 1,\n        \"price\": 89300,\n        \"name\": \"Cangkir Mauttie\",\n        \"description\": \"<p class='text-xl leading-7 mb-6'>Tailored to a level of perfection synonymous with that of a Savile Row suit and with understated quality in the detail, Jetty has been influenced by timeless 1950s style.</p><p class='text-xl leading-7 mb-6'>Providing a subtle nod to the past, Jetty also provides a perfect solution for the way we work today. A comprehensive product family, Jetty features a variety of elegant chairs and sofas.</p>\",\n        \"img_urls\": [\n            \"https://luxspace-html.netlify.app/images/content/showcase-1.front.jpg\",\n            \"https://luxspace-html.netlify.app/images/content/showcase-1.back.jpg\",\n            \"https://luxspace-html.netlify.app/images/content/showcase-1.rear.jpg\",\n            \"https://luxspace-html.netlify.app/images/content/showcase-1.side.jpg\",\n            \"https://luxspace-html.netlify.app/images/content/showcase-1.top.jpg\"\n        ],\n        \"category\": {\n            \"id\": 3,\n            \"name\": \"Decoration\",\n            \"products\": 77392,\n            \"image_url\": \"image-catalog-4.png\"\n        },\n        \"related_products\": [\n            {\n                \"id\": 1,\n                \"category_id\": 1,\n                \"name\": \"Cangkir Mauttie\",\n                \"price\": 89300000,\n                \"image_url\": \"https://luxspace-html.netlify.app/images/content/chair-1.png\"\n            },\n            {\n                \"id\": 2,\n                \"category_id\": 1,\n                \"name\": \"Saman Kakka\",\n                \"price\": 14500399,\n                \"image_url\": \"https://luxspace-html.netlify.app/images/content/chair-2.png\"\n            },\n            {\n                \"id\": 3,\n                \"category_id\": 1,\n                \"name\": \"Lino Dino\",\n                \"price\": 22000000,\n                \"image_url\": \"https://luxspace-html.netlify.app/images/content/chair-3.png\"\n            },\n            {\n                \"id\": 4,\n                \"category_id\": 1,\n                \"name\": \"Syail Ammeno\",\n                \"price\": 6399999,\n                \"image_url\": \"https://luxspace-html.netlify.app/images/content/chair-4.png\"\n            }\n        ]\n    }\n}"
+				},
+				{
+					"name": "Product Detail ID 2",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/products/2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products",
+								"2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"meta\": {\n        \"success\": true,\n        \"message\": \"Request successfully proceed\"\n    },\n    \"data\": {\n        \"id\": 2,\n        \"price\": 67899,\n        \"name\": \"Bangku Minimay\",\n        \"description\": \"<p class='text-xl leading-7 mb-6'>Tailored to a level of perfection synonymous with that of a Savile Row suit and with understated quality in the detail, Jetty has been influenced by timeless 1950s style.</p><p class='text-xl leading-7 mb-6'>Providing a subtle nod to the past, Jetty also provides a perfect solution for the way we work today. A comprehensive product family, Jetty features a variety of elegant chairs and sofas.</p>\",\n        \"img_urls\": [\n            \"https://luxspace-html.netlify.app/images/content/showcase-1.front.jpg\",\n            \"https://luxspace-html.netlify.app/images/content/showcase-1.back.jpg\",\n            \"https://luxspace-html.netlify.app/images/content/showcase-1.rear.jpg\",\n            \"https://luxspace-html.netlify.app/images/content/showcase-1.side.jpg\",\n            \"https://luxspace-html.netlify.app/images/content/showcase-1.top.jpg\"\n        ],\n        \"category\": {\n            \"id\": 3,\n            \"name\": \"Decoration\",\n            \"products\": 77392,\n            \"image_url\": \"image-catalog-4.png\"\n        },\n        \"related_products\": [\n            {\n                \"id\": 1,\n                \"category_id\": 1,\n                \"name\": \"Cangkir Mauttie\",\n                \"price\": 89300000,\n                \"image_url\": \"https://luxspace-html.netlify.app/images/content/chair-1.png\"\n            },\n            {\n                \"id\": 2,\n                \"category_id\": 1,\n                \"name\": \"Saman Kakka\",\n                \"price\": 14500399,\n                \"image_url\": \"https://luxspace-html.netlify.app/images/content/chair-2.png\"\n            },\n            {\n                \"id\": 3,\n                \"category_id\": 1,\n                \"name\": \"Lino Dino\",\n                \"price\": 22000000,\n                \"image_url\": \"https://luxspace-html.netlify.app/images/content/chair-3.png\"\n            },\n            {\n                \"id\": 4,\n                \"category_id\": 1,\n                \"name\": \"Syail Ammeno\",\n                \"price\": 6399999,\n                \"image_url\": \"https://luxspace-html.netlify.app/images/content/chair-4.png\"\n            }\n        ]\n    }\n}"
+				},
+				{
+					"name": "Product Detail ID 3",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/products/3",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products",
+								"3"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"meta\": {\n        \"success\": true,\n        \"message\": \"Request successfully proceed\"\n    },\n    \"data\": {\n        \"id\": 3,\n        \"price\": 120699,\n        \"name\": \"Buku Sidu Edition\",\n        \"description\": \"<p class='text-xl leading-7 mb-6'>Tailored to a level of perfection synonymous with that of a Savile Row suit and with understated quality in the detail, Jetty has been influenced by timeless 1950s style.</p><p class='text-xl leading-7 mb-6'>Providing a subtle nod to the past, Jetty also provides a perfect solution for the way we work today. A comprehensive product family, Jetty features a variety of elegant chairs and sofas.</p>\",\n        \"img_urls\": [\n            \"https://luxspace-html.netlify.app/images/content/showcase-1.front.jpg\",\n            \"https://luxspace-html.netlify.app/images/content/showcase-1.back.jpg\",\n            \"https://luxspace-html.netlify.app/images/content/showcase-1.rear.jpg\",\n            \"https://luxspace-html.netlify.app/images/content/showcase-1.side.jpg\",\n            \"https://luxspace-html.netlify.app/images/content/showcase-1.top.jpg\"\n        ],\n        \"category\": {\n            \"id\": 3,\n            \"name\": \"Decoration\",\n            \"products\": 77392,\n            \"image_url\": \"image-catalog-4.png\"\n        },\n        \"related_products\": [\n            {\n                \"id\": 1,\n                \"category_id\": 1,\n                \"name\": \"Cangkir Mauttie\",\n                \"price\": 89300000,\n                \"image_url\": \"https://luxspace-html.netlify.app/images/content/chair-1.png\"\n            },\n            {\n                \"id\": 2,\n                \"category_id\": 1,\n                \"name\": \"Saman Kakka\",\n                \"price\": 14500399,\n                \"image_url\": \"https://luxspace-html.netlify.app/images/content/chair-2.png\"\n            },\n            {\n                \"id\": 3,\n                \"category_id\": 1,\n                \"name\": \"Lino Dino\",\n                \"price\": 22000000,\n                \"image_url\": \"https://luxspace-html.netlify.app/images/content/chair-3.png\"\n            },\n            {\n                \"id\": 4,\n                \"category_id\": 1,\n                \"name\": \"Syail Ammeno\",\n                \"price\": 6399999,\n                \"image_url\": \"https://luxspace-html.netlify.app/images/content/chair-4.png\"\n            }\n        ]\n    }\n}"
+				},
+				{
+					"name": "Product Detail ID 4",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/products/4",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products",
+								"4"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"meta\": {\n        \"success\": true,\n        \"message\": \"Request successfully proceed\"\n    },\n    \"data\": {\n        \"id\": 4,\n        \"price\": 1973000,\n        \"name\": \"Watch Notes X\",\n        \"description\": \"<p class='text-xl leading-7 mb-6'>Tailored to a level of perfection synonymous with that of a Savile Row suit and with understated quality in the detail, Jetty has been influenced by timeless 1950s style.</p><p class='text-xl leading-7 mb-6'>Providing a subtle nod to the past, Jetty also provides a perfect solution for the way we work today. A comprehensive product family, Jetty features a variety of elegant chairs and sofas.</p>\",\n        \"img_urls\": [\n            \"https://luxspace-html.netlify.app/images/content/showcase-1.front.jpg\",\n            \"https://luxspace-html.netlify.app/images/content/showcase-1.back.jpg\",\n            \"https://luxspace-html.netlify.app/images/content/showcase-1.rear.jpg\",\n            \"https://luxspace-html.netlify.app/images/content/showcase-1.side.jpg\",\n            \"https://luxspace-html.netlify.app/images/content/showcase-1.top.jpg\"\n        ],\n        \"category\": {\n            \"id\": 3,\n            \"name\": \"Decoration\",\n            \"products\": 77392,\n            \"image_url\": \"image-catalog-4.png\"\n        },\n        \"related_products\": [\n            {\n                \"id\": 1,\n                \"category_id\": 1,\n                \"name\": \"Cangkir Mauttie\",\n                \"price\": 89300000,\n                \"image_url\": \"https://luxspace-html.netlify.app/images/content/chair-1.png\"\n            },\n            {\n                \"id\": 2,\n                \"category_id\": 1,\n                \"name\": \"Saman Kakka\",\n                \"price\": 14500399,\n                \"image_url\": \"https://luxspace-html.netlify.app/images/content/chair-2.png\"\n            },\n            {\n                \"id\": 3,\n                \"category_id\": 1,\n                \"name\": \"Lino Dino\",\n                \"price\": 22000000,\n                \"image_url\": \"https://luxspace-html.netlify.app/images/content/chair-3.png\"\n            },\n            {\n                \"id\": 4,\n                \"category_id\": 1,\n                \"name\": \"Syail Ammeno\",\n                \"price\": 6399999,\n                \"image_url\": \"https://luxspace-html.netlify.app/images/content/chair-4.png\"\n            }\n        ]\n    }\n}"
+				},
+				{
+					"name": "Product Detail ID 5",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/products/5",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products",
+								"5"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"meta\": {\n        \"success\": true,\n        \"message\": \"Request successfully proceed\"\n    },\n    \"data\": {\n        \"id\": 5,\n        \"price\": 599400,\n        \"name\": \"Sweet Modern Dinning Table\",\n        \"description\": \"<p class='text-xl leading-7 mb-6'>Tailored to a level of perfection synonymous with that of a Savile Row suit and with understated quality in the detail, Jetty has been influenced by timeless 1950s style.</p><p class='text-xl leading-7 mb-6'>Providing a subtle nod to the past, Jetty also provides a perfect solution for the way we work today. A comprehensive product family, Jetty features a variety of elegant chairs and sofas.</p>\",\n        \"img_urls\": [\n            \"https://luxspace-html.netlify.app/images/content/showcase-1.front.jpg\",\n            \"https://luxspace-html.netlify.app/images/content/showcase-1.back.jpg\",\n            \"https://luxspace-html.netlify.app/images/content/showcase-1.rear.jpg\",\n            \"https://luxspace-html.netlify.app/images/content/showcase-1.side.jpg\",\n            \"https://luxspace-html.netlify.app/images/content/showcase-1.top.jpg\"\n        ],\n        \"category\": {\n            \"id\": 3,\n            \"name\": \"Decoration\",\n            \"products\": 77392,\n            \"image_url\": \"image-catalog-4.png\"\n        },\n        \"related_products\": [\n            {\n                \"id\": 1,\n                \"category_id\": 1,\n                \"name\": \"Cangkir Mauttie\",\n                \"price\": 89300000,\n                \"image_url\": \"https://luxspace-html.netlify.app/images/content/chair-1.png\"\n            },\n            {\n                \"id\": 2,\n                \"category_id\": 1,\n                \"name\": \"Saman Kakka\",\n                \"price\": 14500399,\n                \"image_url\": \"https://luxspace-html.netlify.app/images/content/chair-2.png\"\n            },\n            {\n                \"id\": 3,\n                \"category_id\": 1,\n                \"name\": \"Lino Dino\",\n                \"price\": 22000000,\n                \"image_url\": \"https://luxspace-html.netlify.app/images/content/chair-3.png\"\n            },\n            {\n                \"id\": 4,\n                \"category_id\": 1,\n                \"name\": \"Syail Ammeno\",\n                \"price\": 6399999,\n                \"image_url\": \"https://luxspace-html.netlify.app/images/content/chair-4.png\"\n            }\n        ]\n    }\n}"
+				},
+				{
+					"name": "Product Detail ID 6",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/products/6",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products",
+								"6"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"meta\": {\n        \"success\": true,\n        \"message\": \"Request successfully proceed\"\n    },\n    \"data\": {\n        \"id\": 6,\n        \"price\": 678990,\n        \"name\": \"Meja Belajar IKEA\",\n        \"description\": \"<p class='text-xl leading-7 mb-6'>Tailored to a level of perfection synonymous with that of a Savile Row suit and with understated quality in the detail, Jetty has been influenced by timeless 1950s style.</p><p class='text-xl leading-7 mb-6'>Providing a subtle nod to the past, Jetty also provides a perfect solution for the way we work today. A comprehensive product family, Jetty features a variety of elegant chairs and sofas.</p>\",\n        \"img_urls\": [\n            \"https://luxspace-html.netlify.app/images/content/showcase-1.front.jpg\",\n            \"https://luxspace-html.netlify.app/images/content/showcase-1.back.jpg\",\n            \"https://luxspace-html.netlify.app/images/content/showcase-1.rear.jpg\",\n            \"https://luxspace-html.netlify.app/images/content/showcase-1.side.jpg\",\n            \"https://luxspace-html.netlify.app/images/content/showcase-1.top.jpg\"\n        ],\n        \"category\": {\n            \"id\": 3,\n            \"name\": \"Decoration\",\n            \"products\": 77392,\n            \"image_url\": \"image-catalog-4.png\"\n        },\n        \"related_products\": [\n            {\n                \"id\": 1,\n                \"category_id\": 1,\n                \"name\": \"Cangkir Mauttie\",\n                \"price\": 89300000,\n                \"image_url\": \"https://luxspace-html.netlify.app/images/content/chair-1.png\"\n            },\n            {\n                \"id\": 2,\n                \"category_id\": 1,\n                \"name\": \"Saman Kakka\",\n                \"price\": 14500399,\n                \"image_url\": \"https://luxspace-html.netlify.app/images/content/chair-2.png\"\n            },\n            {\n                \"id\": 3,\n                \"category_id\": 1,\n                \"name\": \"Lino Dino\",\n                \"price\": 22000000,\n                \"image_url\": \"https://luxspace-html.netlify.app/images/content/chair-3.png\"\n            },\n            {\n                \"id\": 4,\n                \"category_id\": 1,\n                \"name\": \"Syail Ammeno\",\n                \"price\": 6399999,\n                \"image_url\": \"https://luxspace-html.netlify.app/images/content/chair-4.png\"\n            }\n        ]\n    }\n}"
+				},
+				{
+					"name": "Product Detail ID 7",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/products/7",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products",
+								"7"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"meta\": {\n        \"success\": true,\n        \"message\": \"Request successfully proceed\"\n    },\n    \"data\": {\n        \"id\": 7,\n        \"price\": 89999999,\n        \"name\": \"Gray White Padded Sofa\",\n        \"description\": \"<p class='text-xl leading-7 mb-6'>Tailored to a level of perfection synonymous with that of a Savile Row suit and with understated quality in the detail, Jetty has been influenced by timeless 1950s style.</p><p class='text-xl leading-7 mb-6'>Providing a subtle nod to the past, Jetty also provides a perfect solution for the way we work today. A comprehensive product family, Jetty features a variety of elegant chairs and sofas.</p>\",\n        \"img_urls\": [\n            \"https://luxspace-html.netlify.app/images/content/showcase-1.front.jpg\",\n            \"https://luxspace-html.netlify.app/images/content/showcase-1.back.jpg\",\n            \"https://luxspace-html.netlify.app/images/content/showcase-1.rear.jpg\",\n            \"https://luxspace-html.netlify.app/images/content/showcase-1.side.jpg\",\n            \"https://luxspace-html.netlify.app/images/content/showcase-1.top.jpg\"\n        ],\n        \"category\": {\n            \"id\": 1,\n            \"name\": \"Living Room\",\n            \"products\": 18309,\n            \"image_url\": \"image-catalog-1.png\"\n        },\n        \"related_products\": [\n            {\n                \"id\": 1,\n                \"category_id\": 1,\n                \"name\": \"Cangkir Mauttie\",\n                \"price\": 89300000,\n                \"image_url\": \"https://luxspace-html.netlify.app/images/content/chair-1.png\"\n            },\n            {\n                \"id\": 2,\n                \"category_id\": 1,\n                \"name\": \"Saman Kakka\",\n                \"price\": 14500399,\n                \"image_url\": \"https://luxspace-html.netlify.app/images/content/chair-2.png\"\n            },\n            {\n                \"id\": 3,\n                \"category_id\": 1,\n                \"name\": \"Lino Dino\",\n                \"price\": 22000000,\n                \"image_url\": \"https://luxspace-html.netlify.app/images/content/chair-3.png\"\n            },\n            {\n                \"id\": 4,\n                \"category_id\": 1,\n                \"name\": \"Syail Ammeno\",\n                \"price\": 6399999,\n                \"image_url\": \"https://luxspace-html.netlify.app/images/content/chair-4.png\"\n            }\n        ]\n    }\n}"
+				},
+				{
+					"name": "Product Detail ID 8",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/products/8",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products",
+								"8"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"meta\": {\n        \"success\": true,\n        \"message\": \"Request successfully proceed\"\n    },\n    \"data\": {\n        \"id\": 8,\n        \"price\": 1298599,\n        \"name\": \"Teal Wooden Cabinet\",\n        \"description\": \"<p class='text-xl leading-7 mb-6'>Tailored to a level of perfection synonymous with that of a Savile Row suit and with understated quality in the detail, Jetty has been influenced by timeless 1950s style.</p><p class='text-xl leading-7 mb-6'>Providing a subtle nod to the past, Jetty also provides a perfect solution for the way we work today. A comprehensive product family, Jetty features a variety of elegant chairs and sofas.</p>\",\n        \"img_urls\": [\n            \"https://luxspace-html.netlify.app/images/content/showcase-1.front.jpg\",\n            \"https://luxspace-html.netlify.app/images/content/showcase-1.back.jpg\",\n            \"https://luxspace-html.netlify.app/images/content/showcase-1.rear.jpg\",\n            \"https://luxspace-html.netlify.app/images/content/showcase-1.side.jpg\",\n            \"https://luxspace-html.netlify.app/images/content/showcase-1.top.jpg\"\n        ],\n        \"category\": {\n            \"id\": 1,\n            \"name\": \"Living Room\",\n            \"products\": 18309,\n            \"image_url\": \"image-catalog-1.png\"\n        },\n        \"related_products\": [\n            {\n                \"id\": 1,\n                \"category_id\": 1,\n                \"name\": \"Cangkir Mauttie\",\n                \"price\": 89300000,\n                \"image_url\": \"https://luxspace-html.netlify.app/images/content/chair-1.png\"\n            },\n            {\n                \"id\": 2,\n                \"category_id\": 1,\n                \"name\": \"Saman Kakka\",\n                \"price\": 14500399,\n                \"image_url\": \"https://luxspace-html.netlify.app/images/content/chair-2.png\"\n            },\n            {\n                \"id\": 3,\n                \"category_id\": 1,\n                \"name\": \"Lino Dino\",\n                \"price\": 22000000,\n                \"image_url\": \"https://luxspace-html.netlify.app/images/content/chair-3.png\"\n            },\n            {\n                \"id\": 4,\n                \"category_id\": 1,\n                \"name\": \"Syail Ammeno\",\n                \"price\": 6399999,\n                \"image_url\": \"https://luxspace-html.netlify.app/images/content/chair-4.png\"\n            }\n        ]\n    }\n}"
+				},
+				{
+					"name": "Product Detail ID 9",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/products/9",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products",
+								"9"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"meta\": {\n        \"success\": true,\n        \"message\": \"Request successfully proceed\"\n    },\n    \"data\": {\n        \"id\": 9,\n        \"price\": 859000,\n        \"name\": \"Classy Wooden Chair\",\n        \"description\": \"<p class='text-xl leading-7 mb-6'>Tailored to a level of perfection synonymous with that of a Savile Row suit and with understated quality in the detail, Jetty has been influenced by timeless 1950s style.</p><p class='text-xl leading-7 mb-6'>Providing a subtle nod to the past, Jetty also provides a perfect solution for the way we work today. A comprehensive product family, Jetty features a variety of elegant chairs and sofas.</p>\",\n        \"img_urls\": [\n            \"https://luxspace-html.netlify.app/images/content/showcase-1.front.jpg\",\n            \"https://luxspace-html.netlify.app/images/content/showcase-1.back.jpg\",\n            \"https://luxspace-html.netlify.app/images/content/showcase-1.rear.jpg\",\n            \"https://luxspace-html.netlify.app/images/content/showcase-1.side.jpg\",\n            \"https://luxspace-html.netlify.app/images/content/showcase-1.top.jpg\"\n        ],\n        \"category\": {\n            \"id\": 2,\n            \"name\": \"Children Room\",\n            \"products\": 837,\n            \"image_url\": \"image-catalog-3.png\"\n        },\n        \"related_products\": [\n            {\n                \"id\": 1,\n                \"category_id\": 1,\n                \"name\": \"Cangkir Mauttie\",\n                \"price\": 89300000,\n                \"image_url\": \"https://luxspace-html.netlify.app/images/content/chair-1.png\"\n            },\n            {\n                \"id\": 2,\n                \"category_id\": 1,\n                \"name\": \"Saman Kakka\",\n                \"price\": 14500399,\n                \"image_url\": \"https://luxspace-html.netlify.app/images/content/chair-2.png\"\n            },\n            {\n                \"id\": 3,\n                \"category_id\": 1,\n                \"name\": \"Lino Dino\",\n                \"price\": 22000000,\n                \"image_url\": \"https://luxspace-html.netlify.app/images/content/chair-3.png\"\n            },\n            {\n                \"id\": 4,\n                \"category_id\": 1,\n                \"name\": \"Syail Ammeno\",\n                \"price\": 6399999,\n                \"image_url\": \"https://luxspace-html.netlify.app/images/content/chair-4.png\"\n            }\n        ]\n    }\n}"
+				},
+				{
+					"name": "Product Detail Not Found",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/products/10",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products",
+								"10"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"meta\": {\n        \"success\": false,\n        \"message\": \"Data Not Found\"\n    },\n    \"data\": null\n}"
+				},
+				{
+					"name": "Product Detail Not Found",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/products/0",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"products",
+								"0"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"meta\": {\n        \"success\": false,\n        \"message\": \"Data Not Found\"\n    },\n    \"data\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Categories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/v1/categories?page=1&page_size=4",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"categories"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "page_size",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Categories",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/v1/categories?page=1&page_size=4",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"categories"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "page_size",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"meta\": {\n        \"success\": true,\n        \"message\": \"Request successfully proceed\",\n        \"info\": {\n            \"page\": 1,\n            \"page_size\": 4\n        }\n    },\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"Living Room\",\n            \"products\": 18309,\n            \"image_url\": \"image-catalog-1.png\",\n            \"ratio\": {\n                \"default\": \"1/9\",\n                \"md\": \"1/4\"\n            }\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Children Room\",\n            \"products\": 837,\n            \"image_url\": \"image-catalog-3.png\",\n            \"ratio\": {\n                \"default\": \"1/9\",\n                \"md\": \"2/2\"\n            }\n        },\n        {\n            \"id\": 3,\n            \"name\": \"Decoration\",\n            \"products\": 77392,\n            \"image_url\": \"image-catalog-4.png\",\n            \"ratio\": {\n                \"default\": \"1/9\",\n                \"md\": \"2/3\"\n            }\n        },\n        {\n            \"id\": 4,\n            \"name\": \"Master Room\",\n            \"products\": 22094,\n            \"image_url\": \"image-catalog-2.png\",\n            \"ratio\": {\n                \"default\": \"1/9\",\n                \"md\": \"1/4\"\n            }\n        }\n    ]\n}"
+				}
+			]
+		}
+	]
+}
