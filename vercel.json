@@ -1,15 +1,15 @@
 {
   "version": 2,
   "functions": {
-    "index.js": {
+    "api/index.js": {
       "memory": 1024,
       "includeFiles": "Luxspace-Mock.postman_collection.json"
     }
   },
   "routes": [
     {
-      "src": "/(.*)",
-      "dest": "index.js"
+      "src": "/api/(.*)",
+      "dest": "/api/index.js"
     }
   ]
 }
