@@ -6,12 +6,6 @@
       "includeFiles": "Luxspace-Mock.postman_collection.json"
     }
   },
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "index.js"
-    }
-  ],
   "routes": [
     {
       "src": "/(.*)",
