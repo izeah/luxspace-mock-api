@@ -1,15 +1,19 @@
-const fs = require("fs");
-const PostmanLocalMockServer = require("@jordanwalsh23/postman-local-mock-server");
+const jsonServer = require("json-server");
+const server = jsonServer.create();
+const router = jsonServer.router("db.json");
+const middlewares = jsonServer.defaults();
 
-//Create the collection object.
-let collection = JSON.parse(
-  fs.readFileSync("./Luxspace-Mock.postman_collection.json", "utf8")
+server.use(middlewares);
+// Add this before server.use(router)
+server.use(
+  jsonServer.rewriter({
+    "/api/*": "/$1",
+  })
 );
+server.use(router);
+server.listen(3000, () => {
+  console.log("JSON Server is running");
+});
 
-//Create a new server
-let server = new PostmanLocalMockServer(2323, collection);
-
-//Start the server
-server.start();
-
+// Export the Server API
 module.exports = server;
