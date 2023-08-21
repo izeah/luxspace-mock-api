@@ -537,5 +537,67 @@
         "md": "1/4"
       }
     }
+  ],
+  "recommended-spaces": [
+    {
+      "id": 1,
+      "name": "Kuretakeso Hott",
+      "image_url": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1700&q=80",
+      "price": 52,
+      "city": "Bandung",
+      "country": "Germany",
+      "rating": 4,
+      "address": "Jln. Kappan Sukses No. 20",
+      "phone": "084392391",
+      "map_url": "https://goo.gl/maps/SyZx2yjWB1yR6AeH8",
+      "photos": [
+        "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+        "https://images.unsplash.com/photo-1616046229478-9901c5536a45?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80",
+        "https://images.unsplash.com/photo-1567016376408-0226e4d0c1ea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+      ],
+      "number_of_bedrooms": 3,
+      "number_of_cupboards": 3,
+      "number_of_kitchens": 2
+    },
+    {
+      "id": 2,
+      "name": "Roemah Nenek",
+      "image_url": "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+      "price": 11,
+      "city": "Seattle",
+      "country": "Bogor",
+      "rating": 5,
+      "address": "Jln. Kappan Sukses No. 20",
+      "phone": "084392391",
+      "map_url": "https://goo.gl/maps/SyZx2yjWB1yR6AeH8",
+      "photos": [
+        "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1700&q=80",
+        "https://images.unsplash.com/photo-1616046229478-9901c5536a45?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80",
+        "https://images.unsplash.com/photo-1567016376408-0226e4d0c1ea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+      ],
+      "number_of_bedrooms": 3,
+      "number_of_cupboards": 3,
+      "number_of_kitchens": 2
+    },
+    {
+      "id": 3,
+      "name": "Darrling How",
+      "image_url": "https://images.unsplash.com/photo-1616046229478-9901c5536a45?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80",
+      "price": 20,
+      "city": "Jakarta",
+      "country": "Indonesia",
+      "rating": 3,
+      "address": "Jln. Kappan Sukses No. 20",
+      "phone": "084392391",
+      "map_url": "https://goo.gl/maps/SyZx2yjWB1yR6AeH8",
+      "photos": [
+        "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+        "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1700&q=80",
+        "https://images.unsplash.com/photo-1567016376408-0226e4d0c1ea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+      ],
+      "number_of_bedrooms": 3,
+      "number_of_cupboards": 3,
+      "number_of_kitchens": 2
+    }
   ]
 }
